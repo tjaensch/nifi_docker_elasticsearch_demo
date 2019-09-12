@@ -29,7 +29,7 @@ This Nifi workflow will pull down the VSRR Provisional Drug Overdose Death Count
 - Right-click anywhere on canvas and hit 'Refresh' to see workflow progress
 - Once finished, go back to browser window with the ElasticSearch index and enter this URL `http://localhost:9200/drugdeaths/_search?q=*&size=500` and you should see a whole bunch of JSON objects
 
-### Query index called 'deathcounts'
+### Query index called 'drugdeaths'
 - See available indexes: `http://localhost:9200/_cat/indices`
 - See individual JSON object count of index: `http://localhost:9200/drugdeaths/_count`
 - See 500 randomly selected objects: `http://localhost:9200/drugdeaths/_search?q=*&size=500`
