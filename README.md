@@ -46,8 +46,11 @@ This Nifi workflow will pull down the VSRR Provisional Drug Overdose Death Count
 ### Shut down environment and **REMOVE** Docker containers and data volumes once finished
 - Run `docker-compose down -v`
 
+Nifi canvas:
 ![Nifi canvas](nifi_canvas.png)
 
+Kibana UI:
 ![Kibana UI](kibana.png)
 
+ElasticSearch browser view:
 ![ElasticSearch browser view](elasticsearch_browser.png)
