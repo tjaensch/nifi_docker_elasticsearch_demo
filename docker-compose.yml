@@ -1,0 +1,27 @@
+version: '2.0'
+services:
+  
+  nifi:
+    image: apache/nifi:latest
+    ports:
+      - 8080:8080
+    networks:
+      - testing_net
+
+  elk:
+    image: sebp/elk
+    ports:
+      - 5601:5601
+      - 9200:9200
+      - 5044:5044
+    networks:
+            testing_net:
+                ipv4_address: 172.28.1.1
+
+networks:
+    testing_net:
+        ipam:
+            driver: default
+            config:
+                - subnet: 172.28.0.0/16
+    
